@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Text AI Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Text AI Website</h1>
+
+        <!-- API Key Input Section -->
+        <div class="api-key-section">
+            <label for="apiKey">Enter Your API Key:</label>
+            <input type="text" id="apiKey" placeholder="Enter your API key...">
+        </div>
+
+        <!-- Chat Interface -->
+        <div class="chat-interface">
+            <textarea id="textInput" placeholder="Enter your text here..."></textarea>
+            <div>
+                <label>Select AI:</label>
+                <select id="apiSelector">
+                    <option value="gpt">ChatGPT</option>
+                    <option value="gemini">GEMINI</option>
+                </select>
+            </div>
+            <button onclick="processText()">Process</button>
+            <div id="output" class="output-container"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
